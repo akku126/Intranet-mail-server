@@ -1,0 +1,10 @@
+Commands for the configuration of sqirrelmail
+//for installing squirrelmail
+sudo apt install squirelmail
+//for configuration of squirrelmail
+sudo squirrelmail-configure
+//in order to access web interface,copy squirrelmail default configuration file to web server folder
+sudo cp /etc/squirrelmail/apache.conf  /etc/apache2/sites-available/squirrelmail.conf
+//for starting service of squirrelmail
+sudo a2ensite squirrelmail.conf
+sudo service apache2 reload
